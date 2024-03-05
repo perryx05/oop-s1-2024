@@ -1,11 +1,8 @@
 # include <iostream>
-# include <string.h>
 
 using namespace std;
 
-int main(){
-    int base10;
-    cin >>base10;
+void transform(int base10){
     int power2 = 1;
     int length = 0;
     while (power2 <= base10){
@@ -22,5 +19,10 @@ int main(){
     for (int i = 0; i<length; i++){
         cout << newBase10[i];
     }
- return 0;
+    cout<<endl;
+}
+
+int main(){
+    transform(59);
+    transform(35);
 }
