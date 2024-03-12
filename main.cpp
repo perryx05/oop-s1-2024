@@ -19,4 +19,5 @@ int main (){
     for (int i = 0; i<num; i++){
         cout<<array1[i]<<" ";
     }
+    delete []array1;
 }
