@@ -3,3 +3,4 @@ void modifyArray(double* array, int size, double value){
         array[i] = array[i] + value;
     }
 }
+    
