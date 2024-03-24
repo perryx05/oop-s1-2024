@@ -8,5 +8,5 @@ PersonList createPersonList(int n){
         personList.people[i].age = 1;
     }
     personList.numPeople = n;
-    return personList;
+    return personList; 
 }
