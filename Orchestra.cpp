@@ -15,8 +15,7 @@ int Orchestra ::get_current_number_of_members()
     return current;
 }
 Musician *Orchestra::get_members()
-    {
-
+    { 
         return orchestra;
     }
 bool Orchestra ::has_instrument(std::string instrument)
