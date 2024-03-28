@@ -6,7 +6,7 @@ using namespace std;
 
 ApartmentBuilding :: ApartmentBuilding(){
     this -> capacity = 10;
-
+this -> unitArray = new Unit[10];
 }
 ApartmentBuilding :: ApartmentBuilding(int capacity){
     this -> current = 0;
