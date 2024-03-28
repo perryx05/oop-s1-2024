@@ -48,6 +48,5 @@ int main (){
     for (int i = 0; i<tower2.get_Current_Number_of_Units(); i++){
         cout<<unitArray[i].get_Value()<<" "<<unitArray[i].get_Num_Bedrooms()<<" "<<unitArray[i].get_Area()<<endl;
     }
-    cout<<" "<<tower2.get_Current_Number_of_Units()<<endl;
-   tower2.~ApartmentBuilding();
+
 }

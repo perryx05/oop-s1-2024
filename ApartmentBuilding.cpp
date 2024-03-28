@@ -13,6 +13,9 @@ ApartmentBuilding :: ApartmentBuilding(int capacity){
     this -> capacity = capacity;
     this -> unitArray = new Unit[capacity];
 }
+int ApartmentBuilding :: get_Capacity(){
+    return capacity;
+}
 int ApartmentBuilding :: get_Current_Number_of_Units(){
     return current;
 }
