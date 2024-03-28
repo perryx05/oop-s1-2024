@@ -5,9 +5,6 @@
 using namespace std;
 
 int main (){
-    ApartmentBuilding tower1;
-    cout<<tower1.get_Current_Number_of_Units()<<endl;
-    cout<<tower1.get_Capacity()<<endl;
     ApartmentBuilding tower2(5);
     Unit unit1(20,3,50);
     Unit unit2(30,5,40);
