@@ -32,3 +32,4 @@ void Player::setHealth(int health) {
 void Player::setDamage(int damage) { 
     this->damage = damage; 
 }
+ 
