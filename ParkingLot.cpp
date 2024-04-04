@@ -28,10 +28,13 @@ void ParkingLot :: unparkVehicle(int ID){
             delete vehicles[current-1];
             current = current -1;
             return;
+         } else {
+            cout<<"Vehicle not in the lot"<<endl;
+         }
          }
 
     }
-}
+
 int ParkingLot :: countOverstayingVehicles(int maxParkingDuration){
     int count = 0;
     for (int i = 0; i<current; i++){
