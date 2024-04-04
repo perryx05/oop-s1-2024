@@ -22,7 +22,7 @@ void ParkingLot :: unparkVehicle(int ID){
         if (vehicles[i]->getID() == ID){
             delete vehicles[i];
              current = current -1;
-            for (int j = i; j < current; j++)
+            for (int j = i; j < current-1; j++)
             {
                     vehicles[j] = vehicles[j+1];
             }
