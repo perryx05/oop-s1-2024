@@ -33,7 +33,7 @@ void ParkingLot :: unparkVehicle(int ID){
             
          }
          }
-         cout<<" ";
+         cout<<endl;
     }
 
 int ParkingLot :: countOverstayingVehicles(int maxParkingDuration){
