@@ -26,6 +26,7 @@ void ParkingLot :: unparkVehicle(int ID){
                     vehicles[j] = vehicles[j+1];
             }
             delete vehicles[current-1];
+            current = current -1;
             return;
          }
 
