@@ -18,6 +18,7 @@ void ParkingLot :: parkVehicle(Vehicle *vehicle){
     }
 }
 void ParkingLot :: unparkVehicle(int ID){
+    int count = 0;
     for (int i = 0; i<current; i++){
         if (vehicles[i]->getID() == ID){
             delete vehicles[i];
@@ -26,15 +27,19 @@ void ParkingLot :: unparkVehicle(int ID){
             {
                     vehicles[j] = vehicles[j+1];
             }
-            delete vehicles[current];
-            return;
-         } else {
+            delete[] vehicles[current];
+            break;
+         } 
+         count ++;
+         }
+        if (count == current){
             cout<<"Vehicle not in the lot"<<endl;
-            
+        }
+        cout<<endl;
          }
-         }
-         cout<<endl;
-    }
+    
+         
+        
 
 int ParkingLot :: countOverstayingVehicles(int maxParkingDuration){
     int count = 0;
