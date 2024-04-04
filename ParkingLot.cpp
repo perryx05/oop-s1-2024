@@ -21,12 +21,12 @@ void ParkingLot :: unparkVehicle(int ID){
     for (int i = 0; i<current; i++){
         if (vehicles[i]->getID() == ID){
             delete vehicles[i];
-            for (int j = i; j < current-1; j++)
+             current = current -1;
+            for (int j = i; j < current; j++)
             {
                     vehicles[j] = vehicles[j+1];
             }
-            delete vehicles[current-1];
-            current = current -1;
+            delete vehicles[current];
             return;
          } else {
             cout<<"Vehicle not in the lot"<<endl;
