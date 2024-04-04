@@ -24,7 +24,7 @@ int main (){
         }
         }
         int id;
-        cout<<"Enter the id of the vehicle you want to unpark"<<endl;
+        cout<<"Enter the id of the vehicle you want to unpark";
         cin>>id;
         vehicles.unparkVehicle(id);
     }
