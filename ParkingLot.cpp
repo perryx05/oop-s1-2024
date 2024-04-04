@@ -30,9 +30,10 @@ void ParkingLot :: unparkVehicle(int ID){
             return;
          } else {
             cout<<"Vehicle not in the lot"<<endl;
+            
          }
          }
-
+     cout <<endl;
     }
 
 int ParkingLot :: countOverstayingVehicles(int maxParkingDuration){
