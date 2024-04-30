@@ -8,6 +8,5 @@ class Student : public Person{
     int id;
     public:
     Student(int id, string name);
-
 };
 #endif

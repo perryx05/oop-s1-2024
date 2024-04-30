@@ -15,6 +15,7 @@ class University{
     public:
     University(string name, string location);
     void addCourse(int id, std::string name);
+    Course getCourse(int id);
 
 };
 #endif

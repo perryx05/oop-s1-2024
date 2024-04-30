@@ -9,8 +9,9 @@ class Grade{
     string assignment;
     int value;
     int student_id;
+    int course_id;
     public:
-    Grade (int student_id, string assignment, int value);
+    Grade (int student_id, int course_id, string assignment, int value);
 
 };
 #endif

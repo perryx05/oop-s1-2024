@@ -7,12 +7,10 @@ class Course{
     private:
     string name;
     int id;
-    int course_id;
     Person** persons; 
-    int current;
+    int current;    
     public:
     Course(int id, string name);
     void addPerson(Person *person);
-      
 };
 #endif
