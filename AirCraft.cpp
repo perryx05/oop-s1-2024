@@ -19,7 +19,7 @@ void AirCraft :: set_weight(int w) {
  float AirCraft :: get_fuel (){
     return fuel;
  }
- void AirCraft :: set_numberOFFlights(int n) {
+ void AirCraft :: set_numberOfFlights(int n) {
     this -> numberOfFlights = n;
  }
  int AirCraft :: get_numberOfFlights(){

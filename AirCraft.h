@@ -16,7 +16,7 @@ class AirCraft {
     int get_weight ();
     void set_fuel(int f);
     float get_fuel();
-    void set_numberOFFlights(int n);
+    void set_numberOfFlights(int n);
     int get_numberOfFlights ();
     void refuel();
     virtual void fly(int headwind, int minutes);
