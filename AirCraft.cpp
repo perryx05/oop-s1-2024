@@ -7,22 +7,22 @@
     this -> fuel = 100;
     this ->numberOfFlights = 0;
 }
-void AirCraft :: setWeight(int w) {
+void AirCraft :: set_weight(int w) {
      this -> weight = w;
 }
- int AirCraft :: getWeight (){
+ int AirCraft :: get_weight (){
     return weight;
  }
- void AirCraft :: setFuel(int f){
+ void AirCraft :: set_fuel(int f){
     this -> fuel = f;
  }
- float AirCraft :: getFuel (){
+ float AirCraft :: get_fuel (){
     return fuel;
  }
- void AirCraft :: setNumberOFFlights(int n) {
+ void AirCraft :: set_numberOFFlights(int n) {
     this -> numberOfFlights = n;
  }
- int AirCraft :: getNumberOfFlights(){
+ int AirCraft :: get_numberOfFlights(){
     return numberOfFlights;
  }
  void AirCraft :: refuel(){

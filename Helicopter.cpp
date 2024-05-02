@@ -4,10 +4,10 @@ Helicopter :: Helicopter (){}
 
 Helicopter :: Helicopter(int w, string n) : AirCraft (w) , name (n){}
 
-void Helicopter :: setName (string n){
+void Helicopter :: set_name (string n){
         this -> name = n;
     }
-string Helicopter :: getName (){
+string Helicopter :: get_name (){
         return name;
     }
 

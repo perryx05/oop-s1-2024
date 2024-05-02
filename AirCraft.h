@@ -12,12 +12,12 @@ class AirCraft {
     public:
     AirCraft();
     AirCraft(int w);
-    void setWeight(int w);
-    int getWeight ();
-    void setFuel(int f);
-    float getFuel();
-    void setNumberOFFlights(int n);
-    int getNumberOfFlights ();
+    void set_weight(int w);
+    int get_weight ();
+    void set_fuel(int f);
+    float get_fuel();
+    void set_numberOFFlights(int n);
+    int get_numberOfFlights ();
     void refuel();
     virtual void fly(int headwind, int minutes);
 

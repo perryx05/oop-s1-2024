@@ -8,8 +8,8 @@ class Helicopter : public AirCraft{
     public:
     Helicopter ();
     Helicopter(int w, string n);
-    void setName (string n);
-    string getName ();
+    void set_name (string n);
+    string get_name ();
     void fly(int headwind, int minutes);
 
 };
