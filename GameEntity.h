@@ -12,7 +12,7 @@ class GameEntity
     char type;
     public:
     GameEntity(int x, int y, char type){
-        this->position = make_tuple(x, y);
+        this->position = make_tuple(0, 0);
         this->type = type;
     }
     tuple<int, int> getPos(){
