@@ -7,10 +7,8 @@ class Ship : public GameEntity{
 public:
 Ship (int x, int y ) : GameEntity(x, y, 'S'){}
 void move (int dx, int dy){
-    std::tuple<int, int> pos = getPos();
-    int x = std::get<0>(pos)+dx;
-    int y = std::get<1>(pos)+dy;
-    pos = std::make_tuple(x,y);
+   std::get<0>(this->position) += dx;
+   std::get<1>(this->position) += dy;
 }
 };
 #endif
