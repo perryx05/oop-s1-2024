@@ -11,8 +11,9 @@ class GameEntity
     tuple<int, int> position;
     char type;
     public:
+    GameEntity() : GameEntity(0,0, ' '){}
     GameEntity(int x, int y, char type){
-        this->position = make_tuple(0, 0);
+        this->position = make_tuple(x, y);
         this->type = type;
     }
     tuple<int, int> getPos(){
