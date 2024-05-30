@@ -11,8 +11,8 @@
 class Game {
     private:
     std::vector<Cell*> grid;
-    int gridWidth;
-    int gridHeight;
+    int _gridWidth;
+    int _gridHeight;
     public:
     std::vector<Cell*>& getGrid(){
         return grid;
@@ -21,8 +21,8 @@ class Game {
         grid = newGrid;
     }
     void initGame(int numCharacters, int numTraps, int gridWidth, int gridHeight){
-        this ->gridWidth = gridWidth;
-        this -> gridHeight = gridHeight;
+        this ->_gridWidth = gridWidth;
+        this -> _gridHeight = gridHeight;
         std::vector<Cell*> newGrid;
         for (int i = 0; i<numCharacters; i++){
             std::tuple<int, int> pos = Utils::generateRandomPos(gridWidth, gridHeight);
@@ -43,7 +43,7 @@ class Game {
                     static_cast<Character*>(cell) -> move(1,0);
                 int x = std::get<0>(static_cast<Character*>(cell)->getPos());
                 int y = std::get<1>(static_cast<Character*>(cell)->getPos());
-                if (x > gridWidth || y> gridHeight){
+                if (x > _gridWidth || y> _gridHeight){
                     won = true;
                     std::cout<<"Character has won the game!"<<std::endl;
                     break;
@@ -63,7 +63,7 @@ class Game {
             iter ++ ;
         }
         if (iter>=maxIterations) {
-           std::cout<<"Character has won the game!"<<std::endl;
+           std::cout<<"Maximum number of iterations reached. Game over."<<std::endl;
         } 
      //   end:
        // if (won == true){
