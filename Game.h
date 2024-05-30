@@ -43,10 +43,10 @@ class Game {
                     static_cast<Character*>(cell) -> move(1,0);
                 int x = std::get<0>(static_cast<Character*>(cell)->getPos());
                 int y = std::get<1>(static_cast<Character*>(cell)->getPos());
-                if (x > _gridWidth || y> _gridHeight){
+                if (x > _gridWidth){
                     won = true;
-                    std::cout<<"Character has won the game!"<<std::endl;
-                    break;
+                   goto end;
+                   break;
                 }
                 }
                 for (Cell* otherCell : grid){
@@ -65,10 +65,10 @@ class Game {
         if (iter>=maxIterations) {
            std::cout<<"Maximum number of iterations reached. Game over."<<std::endl;
         } 
-     //   end:
-       // if (won == true){
-           // std::cout<<"Character has won the game!"<<std::endl;
-       // }
+       end:
+       if (won == true){
+           std::cout<<"Character has won the game!"<<std::endl;
+        }
     }
 
 

@@ -1,0 +1,18 @@
+Task: Define a class Game to handle the game mechanics and winning conditions.
+
+Requirements:
+
+Has a default constructor.
+The Game class should have a private member std::vector<Cell*> grid. and a std::vector<Cell*>& getGrid() function.
+
+It should have a function initGame(int numCharacters, int numTraps, int gridWidth, int gridHeight) that initializes the game with a certain number of each object at random positions in the grid.
+
+The Game class should provide a function gameLoop(int maxIterations, double trapActivationDistance) that:
+
+Runs the game for a certain number of iterations.
+In each iteration, moves all Character objects in the grid to the right by calling the move(1,0) function.
+Checks for any Trap objects nearby each Character. If a Trap object is within the trapActivationDistance, the Trap's apply function is called on the Character.
+Checks if any Character has stepped outside of the grid. If so, the game is won by that Character. Prints 
+"Character has won the game!" and ends the game loop. 
+If the maximum number of iterations is reached and no character won, it prints "Maximum number of iterations reached. Game over."
+Write a main-3.cpp file to simulate the game using the Game class and demonstrate how it handles the game mechanics and winning conditions
