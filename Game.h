@@ -37,7 +37,7 @@ class Game {
     void gameLoop(int maxIterations, double trapActivationDistance){
         bool won = false;
         int iter = 0;
-        while (iter <= maxIterations){
+        for (int i = 0; i<maxIterations; i++){
             for (Cell* cell : grid){
                 if (cell->getType() == 'C'){
                     static_cast<Character*>(cell) -> move(1,0);
@@ -59,11 +59,10 @@ class Game {
                 }
 
             }
-            iter ++ ;
         }
-        if (iter>=maxIterations) {
+       //if (iter>=maxIterations) {
            std::cout<<"Maximum number of iterations reached. Game over."<<std::endl;
-        } 
+      //  } 
      //  end:
      //  if (won == true){
         //   std::cout<<"Character has won the game!"<<std::endl;
