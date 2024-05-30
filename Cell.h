@@ -9,6 +9,7 @@ class Cell {
     std::tuple<int, int> position;
     char type;
     public:
+    Cell() : Cell(0,0, ' '){}
     Cell(int x, int y, char type) {
         this ->position = std::make_tuple(x,y);
         this -> type = type;
