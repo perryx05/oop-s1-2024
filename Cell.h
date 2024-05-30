@@ -15,10 +15,10 @@ class Cell {
         this -> type = type;
     }
     std::tuple<int, int> getPos() {
-        return position;
+        return this -> position;
     }
     char getType() {
-        return type;
+        return this -> type;
     }
     void setPos(int x, int y){
         this ->position = std::make_tuple(x,y);
