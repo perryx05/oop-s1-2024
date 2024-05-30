@@ -26,11 +26,11 @@ class Game {
         std::vector<Cell*> newGrid;
         for (int i = 0; i<numCharacters; i++){
             std::tuple<int, int> pos = Utils::generateRandomPos(gridWidth, gridHeight);
-            grid.push_back(new Character(std::get<0>(pos), std::get<1>(pos)));
+            newGrid.push_back(new Character(std::get<0>(pos), std::get<1>(pos)));
         }
         for (int i = 0; i<numTraps; i++){
             std::tuple<int, int> pos = Utils::generateRandomPos(gridWidth, gridHeight);
-            grid.push_back(new Trap(std::get<0>(pos), std::get<1>(pos)));
+            newGrid.push_back(new Trap(std::get<0>(pos), std::get<1>(pos)));
         }
         setGrid(newGrid);
     }
