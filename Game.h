@@ -43,7 +43,7 @@ class Game {
                     static_cast<Character*>(cell) -> move(1,0);
                 int x = std::get<0>(static_cast<Character*>(cell)->getPos());
                 int y = std::get<1>(static_cast<Character*>(cell)->getPos());
-                if (x > _gridWidth){
+                if (x >= _gridWidth){
                   std::cout<<"Character has won the game!"<<std::endl;
                    return;
                 }
