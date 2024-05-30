@@ -8,7 +8,7 @@ class Cell {
     protected:
     std::tuple<int, int> position;
     char type;
-    private:
+    public:
     Cell(int x, int y, char type) {
         this ->position = std::make_tuple(x,y);
         this -> type = type;
