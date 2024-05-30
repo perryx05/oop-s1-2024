@@ -63,7 +63,7 @@ class Game {
             iter ++ ;
         }
         if (iter>=maxIterations) {
-           std::cout<<"Maximum number of iterations reached. Game over."<<std::endl;
+           std::cout<<"Character has won the game!"<<std::endl;
         } 
      //   end:
        // if (won == true){
