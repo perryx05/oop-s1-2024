@@ -20,9 +20,10 @@ class Game {
     void setGrid(std::vector<Cell*> newGrid){
         grid = newGrid;
     }
-    std::vector<Cell*>initGame(int numCharacters, int numTraps, int gridWidth, int gridHeight){
+    void initGame(int numCharacters, int numTraps, int gridWidth, int gridHeight){
         this ->gridWidth = gridWidth;
         this -> gridHeight = gridHeight;
+        std::vector<Cell*> newGrid;
         for (int i = 0; i<numCharacters; i++){
             std::tuple<int, int> pos = Utils::generateRandomPos(gridWidth, gridHeight);
             grid.push_back(new Character(std::get<0>(pos), std::get<1>(pos)));
@@ -31,7 +32,7 @@ class Game {
             std::tuple<int, int> pos = Utils::generateRandomPos(gridWidth, gridHeight);
             grid.push_back(new Trap(std::get<0>(pos), std::get<1>(pos)));
         }
-       return grid;
+        setGrid(newGrid);
     }
     void gameLoop(int maxIterations, double trapActivationDistance){
         bool won = false;
@@ -64,7 +65,7 @@ class Game {
            std::cout<<"Maximum number of iterations reached. Game over."<<std::endl;
         } 
         end:
-        if (won = true){
+        if (won == true){
             std::cout<<"Character has won the game!"<<std::endl;
         }
     }
