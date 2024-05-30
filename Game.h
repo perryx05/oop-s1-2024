@@ -23,7 +23,7 @@ class Game {
     void initGame(int numCharacters, int numTraps, int gridWidth, int gridHeight){
         this ->_gridWidth = gridWidth;
         this -> _gridHeight = gridHeight;
-        std::vector<Cell*> newGrid;
+       // std::vector<Cell*> newGrid;
         for (int i = 0; i<numCharacters; i++){
             std::tuple<int, int> pos = Utils::generateRandomPos(gridWidth, gridHeight);
             grid.push_back(new Character(std::get<0>(pos), std::get<1>(pos)));
@@ -32,7 +32,7 @@ class Game {
             std::tuple<int, int> pos = Utils::generateRandomPos(gridWidth, gridHeight);
             grid.push_back(new Trap(std::get<0>(pos), std::get<1>(pos)));
         }
-        setGrid(newGrid);
+      //  setGrid(newGrid);
     }
     void gameLoop(int maxIterations, double trapActivationDistance){
         bool won = false;
